@@ -1,13 +1,11 @@
 📚 Bennabi RAG Chatbot
-A RAG  chatbot powered by the Mistral LLM (model="mistral-small"), designed to answer questions about three books by Malek Bennabi.
+A (RAG) chatbot powered by the Mistral LLM (model="mistral-small"). It is designed to answer questions about three books by Malek Bennabi by combining document retrieval with generative AI.
 
-The chatbot:
+Features
+📖 Retrieves relevant excerpts directly from the books using a hybrid retrieval system combining FAISS vector search and BM25 keyword search with a cross-encoder re-ranker for improved accuracy.
 
-📖 Searches and retrieves relevant excerpts directly from the books.
+💡 Generates contextual answers based on Bennabi’s ideas when explicit information is not available in the texts.
 
-💡 Also answers questions not explicitly addressed by Bennabi, based on the principles and ideas developed in his works.
+🎯 Uses LangChain chains including document loaders, retrieval chains, and prompt templates customized per book.
 
-🎯 Provides contextual and faithful responses aligned with the author’s thought.
-
-
-
+Built with Streamlit interface.
